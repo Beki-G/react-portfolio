@@ -1,0 +1,5 @@
+.hero{
+    height: 60vh;
+    background-image:radial-gradient(ellipse farthest-corner at 0 140%, #d19931 0%, #b1b34d 70%, #000000 70%);
+    
+}
