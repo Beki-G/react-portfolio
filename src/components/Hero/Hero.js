@@ -11,11 +11,11 @@ function Hero() {
       // style={{background: "linear-gradient(90deg, #667eea 0%, #764ba2 100%)"}}
     >
       <Navbar />
-      <div className="flex h-40 lg:h-64 mx-auto px-7 justify-center items-center text-2xl text-white container md:text-4xl hero-text text-center" >
+      <div className="flex h-40 lg:h-64 mx-auto px-7 justify-center items-center text-2xl text-white container md:text-4xl hero-text text-center m-24 lg:m-64" >
         <div className="block">
         <Typewriter 
             options={{
-              strings: [`Hi I'm Beki`, `A loving bird owner`, `and a Web Developer`, ],
+              strings: [`Hi I'm Beki`, `A loving bird owner`, `and your next Web Developer`, ],
               autoStart: true,
               loop: true,
             }}

@@ -17,7 +17,7 @@ function Card({ data }) {
         subTypeColor = "text-white"
         break;
       case "Framework":
-        classes = "bg-teal-600";
+        classes = "bg-teal-500";
         typeColor = "text-yellow-300"
         subTypeColor = "text-white"
         break;
