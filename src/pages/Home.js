@@ -1,13 +1,16 @@
-import React from"react";
-import Navbar from "../components/Navbar/Navbar";
+import React, { Profiler } from"react";
 import Hero from "../components/Hero/Hero"
+import Profile from "../components/Profile/Profile";
 
 function Home(){
 
     return(
         <div>
-            <Navbar />
+            
             <Hero />
+            <Profile />
+            
+            
         </div>
     )
 }

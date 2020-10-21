@@ -10,7 +10,7 @@ function Navbar() {
   }
 
   return (
-      <nav className="bg-black sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+      <nav className="bg-transparent sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
         <div className="flex items-center justify-between px-4 py-3 sm:p-0">
           <div>
             <img className="h-8" src={logo} alt="BG initials" />
