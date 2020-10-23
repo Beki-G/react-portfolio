@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../assets/initials.png";
+// import logo from "../../assets/initials.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,13 +13,13 @@ function Navbar() {
       <nav className="bg-transparent sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
         <div className="flex items-center justify-between px-4 py-3 sm:p-0">
           <div>
-            <img className="h-8" src={logo} alt="BG initials" />
+            <a href="/"><img className="h-10" src={require("../../imgs/initials.png")} alt="BG initials" /></a>
           </div>
           <div className="sm:hidden">
             <button
               onClick={toggleSideMenu}
               type="button"
-              className="block text-gray-500 hover:text-white focus:text-white focus:outline-none"
+              className="block text-lgCyan bg-eagleGreen hover:text-white focus:text-white focus:outline-none"
             >
               <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
                 <path
@@ -42,19 +42,19 @@ function Navbar() {
         >
           <a
             href="/"
-            className="block py-1 font-semibold px-2 text-yellow-300 rounded hover:bg-yellow-700"
+            className="block py-1  px-2 text-eagleGreen bg-lgCyan font-extrabold rounded hover:bg-lgCyan hover:text-midGreen"
           >
             Home
           </a>
           <a
-            href="/"
-            className="mt-1 block py-1 font-semibold px-2 text-yellow-300 rounded hover:bg-yellow-700 sm:mt-0 sm:ml-2"
+            href="/portfolio"
+            className="mt-1 block py-1 px-2 text-eagleGreen bg-lgCyan rounded font-extrabold hover:bg-lgCyan hover:text-midGreen sm:mt-0 sm:ml-2"
           >
             Projects
           </a>
           <a
-            href="/"
-            className="mt-1 block py-1 font-semibold px-2 text-yellow-300 rounded hover:bg-yellow-700 sm:mt-0 sm:ml-2"
+            href="/contact"
+            className="mt-1 block py-1 font-extrabold px-2 text-eagleGreen bg-lgCyan rounded bold hover:bg-lgCyan hover:text-midGreen sm:mt-0 sm:ml-2"
           >
             Contact Me
           </a>

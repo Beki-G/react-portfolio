@@ -70,7 +70,7 @@ function CardGrid() {
         },
     ]
   return (
-    <div className=" bg-gray-200 mt-16 md:mt-0">
+    <div className=" bg-lgCyan mt-16 md:mt-0">
         <TechBanner />
         <br />
       <div className="flex flex-wrap overflow-hidden w-4/5 mx-auto mt-8">

@@ -2,24 +2,29 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer>
-      <div class="flex justify-center items-center border-t-2 mt-16 bg-white"> Checkout my profiles!
-        <a
-          href="https://www.linkedin.com/in/rebeca-gonzalez/"
-          class="text-gray-700 hover:text-gray-800 m-2  "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
+    <footer className="flex flex-col mt-10">
+      <div className=" flex justify-center items-center border-t-2 bg-eagleGreen text-aquamarine">
+        Check me out on social media! &#160;
+        <span className="bg-aquamarine hover:text-slateGray">
+          <a
+            href="https://www.linkedin.com/in/rebeca-gonzalez/"
+            className="text-aquamarine hover:text-slateGray  "
+            target="_blank" rel="noopener noreferrer"
           >
-            <path d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z" />
-          </svg>
-        </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+        </span>
         <a
           href="https://twitter.com/bekigonzalez4"
-          class="text-gray-700 hover:text-gray-800 m-2  "
+          className="text-aquamarine hover:text-slateGray m-2  "
+          target="_blank" rel="noopener noreferrer"
         >
           <svg style={{ width: "24px", height: "24px" }} viewBox="0 0 24 24">
             <path
@@ -30,7 +35,8 @@ function Footer() {
         </a>
         <a
           href="https://github.com/Beki-G"
-          class="text-gray-700 hover:text-gray-800 m-2"
+          className="text-aquamarine hover:text-slateGray  m-2"
+          target="_blank" rel="noopener noreferrer"
         >
           <svg style={{ width: "24px", height: "24px" }} viewBox="0 0 24 24">
             <path

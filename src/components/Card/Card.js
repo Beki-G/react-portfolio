@@ -12,27 +12,28 @@ function Card({ data }) {
 
     switch (data.type) {
       case "Browser":
-        classes = "bg-black";
-        typeColor = "text-yellow-300"
+        classes = "bg-tuscany";
+        typeColor = "text-black"
         subTypeColor = "text-white"
         break;
       case "Framework":
-        classes = "bg-teal-500";
-        typeColor = "text-yellow-300"
+        classes = "bg-midGreen";
+        typeColor = "text-aquamarine"
         subTypeColor = "text-white"
         break;
       case "DevTools":
-        classes = "bg-red-600";
-        typeColor = "text-white"
+        classes = "bg-sky";
+        typeColor = "text-eagleGreen";
+        subTypeColor = "text-black"
         break;
       case "Databases":
-        classes = "bg-yellow-300";
+        classes = "bg-aquamarine";
         typeColor = "text-gray-700"
         break;
       default:
-        classes = "bg-purple-600";
-        typeColor = "text-yellow-300";
-        subTypeColor  = "text-gray-100"
+        classes = "bg-slateGray";
+        typeColor = "text-black";
+        subTypeColor  = "text-gray-600"
         break;
     }
     setColors({ cardColor: classes , titleText:typeColor, subTitle:subTypeColor});
@@ -41,7 +42,7 @@ function Card({ data }) {
   }
 
   return (
-    <div className="my-2 px-2 w-1/2 overflow-hidden sm:w-1/2 lg:w-1/3 xl:w-1/4">
+    <div className="my-2 px-2 w-full overflow-hidden sm:w-1/2 lg:w-1/3 xl:w-1/4 ">
       <div className="rounded h-full flex justify-center items-center">
         <div
           className={`rounded shadow-md h-48 w-48 p-6 flex flex-col justify-around ${color.cardColor}`}

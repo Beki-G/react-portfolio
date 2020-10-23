@@ -8,7 +8,7 @@ import Profile from "../components/Profile/Profile";
 function Home(){
 
     return(
-        <div className="bg-gray-200">
+        <div className="bg-lgCyan">
             
             <Hero />
             <Profile />
