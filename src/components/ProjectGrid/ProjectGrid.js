@@ -55,7 +55,7 @@ function ProjectGrid() {
   ];
   return (
     <div>
-      <Navbar />
+      
       <div className=" bg-lgCyan mt-16 md:mt-0 w-4/5 mx-auto min-h-9/10">
         <br />
         <div className="flex flex-wrap -mx-2 overflow-hidden ">
