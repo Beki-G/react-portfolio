@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link} from "react-router-dom"
 // import logo from "../../assets/initials.png";
 
 function Navbar() {
@@ -9,11 +10,12 @@ function Navbar() {
     setIsOpen(!isOpen);
   }
 
+
   return (
       <nav className="bg-transparent sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
         <div className="flex items-center justify-between px-4 py-3 sm:p-0">
           <div>
-            <a href="/"><img className="h-10" src={require("../../imgs/initials.png")} alt="BG initials" /></a>
+            <Link to="/" ><img className="h-10" src={require("../../imgs/initials.png")} alt="BG initials" /></Link>
           </div>
           <div className="sm:hidden">
             <button
@@ -40,24 +42,24 @@ function Navbar() {
             isOpen ? "block" : "hidden"
           }`}
         >
-          <a
-            href="/"
+          <Link
+            to="/"
             className="block py-1  px-2 text-eagleGreen bg-lgCyan font-extrabold rounded hover:bg-lgCyan hover:text-midGreen"
           >
             Home
-          </a>
-          <a
-            href="/portfolio"
+          </Link>
+          <Link
+            to="/portfolio"
             className="mt-1 block py-1 px-2 text-eagleGreen bg-lgCyan rounded font-extrabold hover:bg-lgCyan hover:text-midGreen sm:mt-0 sm:ml-2"
           >
             Projects
-          </a>
-          <a
-            href="/contact"
+          </Link>
+          <Link
+            to="/contact"
             className="mt-1 block py-1 font-extrabold px-2 text-eagleGreen bg-lgCyan rounded bold hover:bg-lgCyan hover:text-midGreen sm:mt-0 sm:ml-2"
           >
             Contact Me
-          </a>
+          </Link>
         </div>
     </nav>
   );

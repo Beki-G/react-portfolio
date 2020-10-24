@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import  { BrowserRouter, Route, Switch} from "react-router-dom"
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import './tailwind.output.css';
@@ -9,7 +10,9 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+       <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
